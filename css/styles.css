@@ -30,6 +30,10 @@ button {
   cursor: pointer;
 }
 
+img {
+  display: block;
+}
+
 .container {
   width: 1166px;
   padding-left: 15px;
@@ -78,20 +82,41 @@ button {
   padding-bottom: 28px;
 }
 
+.header .container {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
 .header-logo {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.11;
   letter-spacing: -0.03em;
   color: #111;
-  &::after {
+  margin-right: 76px;
+  /* &::after {
     content: 'Text';
     color: #fd9222;
-  }
+  } */
 }
 
 .header-logo-italic {
   font-style: italic;
+}
+
+.header-contacts {
+  margin-left: auto;
+}
+
+.header-menu-list {
+  display: flex;
+  gap: 24px;
 }
 
 .header-menu-link {
@@ -105,6 +130,11 @@ button {
 .header-menu-link:hover,
 .header-menu-link:focus {
   color: #fd9222;
+}
+
+.header-contacts-list {
+  display: flex;
+  gap: 24px;
 }
 
 /* .footer:not(:has(.footer-subtitle)) {
@@ -130,18 +160,32 @@ button {
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: #fff;
+  max-width: 484px;
+  margin-bottom: 32px;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  /* gap: 14px; */
 }
 
 .hero-btn {
   font-weight: 600;
   font-size: 14px;
   color: #fff;
+  padding: 14px 40px;
+  border-radius: 100px;
 }
 
 .hero-btn-orange {
+  background-color: #fd9222;
+  border: none;
+  margin-right: 14px;
 }
 
 .hero-btn-shadow {
+  border: 1px solid #fff;
 }
 
 .hero-btn-scroll {
@@ -150,6 +194,7 @@ button {
   line-height: 1.29;
   letter-spacing: -0.03em;
   color: #fff;
+  margin-left: auto;
 }
 
 /* ----------FEATURES------------ */
@@ -161,11 +206,12 @@ button {
 }
 
 .features-list {
-  /* display: flex;
-  gap: 70px; */
+  display: flex;
+  gap: 70px;
 }
 
 .features-item {
+  width: calc((100% - 2 * 70px) / 3);
 }
 
 .features-subtitle {
@@ -205,12 +251,22 @@ button {
 }
 
 .taste-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 30px 19px; */
+  column-gap: 19px;
+  row-gap: 30px;
 }
 
 .taste-item {
+  border: 1px solid #fd9222;
+  border-radius: 15px;
+  padding: 28px 32px;
+  width: calc((100% - 3 * 19px) / 4);
 }
 
 .taste-img {
+  margin-bottom: 36px;
 }
 
 .taste-subtitle {
