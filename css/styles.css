@@ -100,10 +100,26 @@ img {
   letter-spacing: -0.03em;
   color: #111;
   margin-right: 76px;
-  /* &::after {
-    content: 'Text';
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  &::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/logo-img.svg);
+    background-size: cover;
+  }
+
+  &::before {
+    content: '1.';
     color: #fd9222;
-  } */
+  }
+}
+
+.header-logo:hover::after {
+  text-decoration: underline;
 }
 
 .header-logo-italic {
@@ -137,6 +153,20 @@ img {
   gap: 24px;
 }
 
+.header-contacts-icon {
+  fill: transparent;
+  stroke: #111111;
+}
+
+/* .header-contacts-link {
+  stroke: #fd2231;
+} */
+
+.header-contacts-link:hover .header-contacts-icon,
+.header-contacts-link:focus .header-contacts-icon {
+  stroke: #fd9222;
+}
+
 /* .footer:not(:has(.footer-subtitle)) {
   background-color: aqua;
 } */
@@ -149,6 +179,16 @@ img {
 
 .hero {
   background-color: #1e1823;
+  background-image: linear-gradient(
+      rgba(30, 24, 35, 0.4),
+      rgba(30, 24, 35, 0.4)
+    ),
+    url('../img/main-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1200px;
+  margin: 0 auto;
   padding-top: 380px;
   padding-bottom: 40px;
   border-radius: 30px;
@@ -306,12 +346,16 @@ img {
 }
 
 .made-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   &::before {
     content: '';
     display: inline-block;
     width: 8px;
     height: 8px;
-    background-color: hsl(0, 0%, 3%);
+    background-color: #4c4c4c;
+    border: 1px solid #eceded;
     border-radius: 50%;
     margin-right: 8px;
     /* vertical-align: middle; */
