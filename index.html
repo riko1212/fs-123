@@ -39,7 +39,7 @@
     <title>Chocolate</title>
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
           <a
@@ -102,11 +102,11 @@
           </ul>
         </address>
       </div>
-    </header>
+    </header> -->
 
     <!-- header>(nav>a+ul>li*3>a)+address>ul>li*2>a -->
     <main>
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container container-narrow">
           <h1 class="hero-title">
             Treat yourself or a loved one to our finest ingredients for a moment
@@ -131,7 +131,7 @@
             >
           </div>
         </div>
-      </section>
+      </section> -->
       <section
         class="features"
         id="features"
@@ -290,47 +290,53 @@
           >
             hOW IT’S <span class="active">made?</span>
           </h2>
-          <img
-            src="./img/made-img.jpg"
-            alt="liquid chocolate"
-            width="600"
-            height="400"
-            class="made-img"
-          />
-          <h3 class="made-subtitle">
-            Try our chocolates today and discover the perfect balance of flavor
-          </h3>
-          <ul class="made-list">
-            <li class="made-item">
-              <p class="made-text">
-                Heat the milk in a saucepan without bringing it to a boil. Add
-                sugar and cocoa powder.
-              </p>
-            </li>
-            <li class="made-item">
-              <p class="made-text">
-                At the same time, prepare a water bath. Melt the butter on it.
-              </p>
-            </li>
-            <li class="made-item">
-              <p class="made-text">
-                "Mix" the milk mixture and already liquid butter. Mix thoroughly
-                with a silicone spatula so that the mass becomes uniform and
-                silky.
-              </p>
-            </li>
-            <li class="made-item">
-              <p class="made-text">
-                Heat the mixture over low heat, letting it barely boil.
-              </p>
-            </li>
-            <li class="made-item">
-              <p class="made-text">
-                Pour the chocolate into special containers (can be replaced with
-                ice molds). Allow to cool and harden.
-              </p>
-            </li>
-          </ul>
+          <div class="made-wrapper">
+            <img
+              src="./img/made-img.jpg"
+              alt="liquid chocolate"
+              width="600"
+              height="400"
+              class="made-img"
+            />
+            <div class="made-content">
+              <h3 class="made-subtitle">
+                Try our chocolates today and discover the perfect balance of
+                flavor
+              </h3>
+              <ul class="made-list">
+                <li class="made-item">
+                  <p class="made-text">
+                    Heat the milk in a saucepan without bringing it to a boil.
+                    Add sugar and cocoa powder.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p class="made-text">
+                    At the same time, prepare a water bath. Melt the butter on
+                    it.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p class="made-text">
+                    "Mix" the milk mixture and already liquid butter. Mix
+                    thoroughly with a silicone spatula so that the mass becomes
+                    uniform and silky.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p class="made-text">
+                    Heat the mixture over low heat, letting it barely boil.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p class="made-text">
+                    Pour the chocolate into special containers (can be replaced
+                    with ice molds). Allow to cool and harden.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
       <section class="review">
@@ -389,56 +395,77 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <p class="footer-text">
-          <span class="active">Chocolate</span> a delicious cure for a bad day
-        </p>
-        <p class="footer-subtitle">Contact us</p>
-        <address class="footer-contacts">
-          <ul class="footer-contacts-list">
-            <li class="footer-contacts-item">
-              <a
-                class="footer-contacts-link"
-                href="tel:+380684439426"
-                >+380 (68) 443-94-26</a
-              >
-            </li>
-            <li class="footer-contacts-item">
-              <a
-                class="footer-contacts-link"
-                href="mailto:simplycthaoc@gmail.com"
-                >simplycthаoc@gmail.com</a
-              >
-            </li>
-          </ul>
-        </address>
-        <nav
-          aria-label="Footer Navigation"
-          class="footer-navigation"
-        >
-          <ul class="footer-menu-list">
-            <li class="footer-menu-item">
-              <a
-                class="footer-menu-link"
-                href=""
-                >Home</a
-              >
-            </li>
-            <li class="footer-menu-item">
-              <a
-                class="footer-menu-link"
-                href=""
-                >How it’s made?</a
-              >
-            </li>
-            <li class="footer-menu-item">
-              <a
-                class="footer-menu-link"
-                href=""
-                >Chocolate is loved</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <div class="footer-info">
+          <p class="footer-text">
+            <span class="active">Chocolate</span> a delicious cure for a bad day
+          </p>
+          <div class="footer-contacts-wrapper">
+            <p class="footer-subtitle">Contact us</p>
+            <address class="footer-contacts">
+              <ul class="footer-contacts-list">
+                <li class="footer-contacts-item">
+                  <a
+                    class="footer-contacts-link"
+                    href="tel:+380684439426"
+                    >+380 (68) 443-94-26</a
+                  >
+                </li>
+                <li class="footer-contacts-item">
+                  <a
+                    class="footer-contacts-link"
+                    href="mailto:simplycthaoc@gmail.com"
+                    >simplycthаoc@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <nav
+            aria-label="Footer Navigation"
+            class="footer-navigation"
+          >
+            <ul class="footer-menu-list">
+              <li class="footer-menu-item">
+                <a
+                  class="footer-menu-link"
+                  href=""
+                  >Home</a
+                >
+              </li>
+              <li class="footer-menu-item">
+                <a
+                  class="footer-menu-link"
+                  href=""
+                  >How it’s made?</a
+                >
+              </li>
+              <li class="footer-menu-item">
+                <a
+                  class="footer-menu-link"
+                  href=""
+                  >Chocolate is loved</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <form class="footer-form">
+            <label aria-label="footer email"
+              ><input
+                type="email"
+                placeholder="Enter your email"
+                class="footer-input"
+            /></label>
+            <button
+              type="submit"
+              class="footer-form-btn"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop">
@@ -525,12 +552,31 @@
               placeholder="Your text"
             ></textarea>
           </div>
-          <button
-            type="submit"
-            disabled
-          >
-            SEND
-          </button>
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              name="policy"
+              id="policy"
+              class="modal-check visually-hidden"
+              value="accepted"
+            />
+            <label
+              for="policy"
+              class="modal-check-label"
+              ><span class="modal-check-box">
+                <svg
+                  class="check-icon"
+                  width="10"
+                  height="10"
+                >
+                  <use href="./img/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href>Privacy Policy</a></label
+            >
+          </div>
+          <button type="submit">SEND</button>
         </form>
       </div>
     </div>
